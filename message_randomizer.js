@@ -22,4 +22,9 @@ const pickMe = (arr) => {
 /* defines the second piece of data (the relative opening clause) by combining a piece of data from its three arrray */
 let relCause = `${pickMe(firstWords)} ${pickMe(nounArr)} ${pickMe(verbArr)}`
 
-console.log(relCause);
+/* function to capitlize the first letter of the sentence */
+const capSentence = (stringVar) => {
+    return stringVar.charAt(0).toUpperCase() + stringVar.slice(1);
+};
+
+
