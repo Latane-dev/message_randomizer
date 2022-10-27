@@ -12,3 +12,11 @@ const verbArr = ["runs wild", "sees the darkness", "smells a scent", "makes a no
 
 const adviceArr = ["it is wise to go the other way", "do not hesitate to stand still", "keep a close eye on your enemies", 
 "your day will be filled with luck", "it is time for a big change in your life", "do not procrastinate to do work that can be accomplished in the present"]
+
+/* function that will randomly choose a word or phrase from the array */
+const pickMe = (arr) => {
+    let ranPhrase = Math.floor(Math.random() * arr.length);
+    return arr[ranPhrase];
+};
+
+console.log(pickMe(firstWords));
